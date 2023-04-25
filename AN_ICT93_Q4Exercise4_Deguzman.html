@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q4 Exercise 4</title>
+</head>
+<body>
+	<h2>Length Converter</h2>
+	<p>Enter a number to convert from Centimeter to Inches</p>
+
+	<form>
+		Enter a Number to Calculate: <input type="text" id="length"><br>
+		<button type="submit" onclick="Compute()">Calculate</button>
+	</form>
+
+	<script type="text/javascript">
+		function Compute(){
+			let num1 = document.getElementById("length").value;
+			let output = Number(num1 / 2.54);
+
+			window.alert("The Length of Centimeter to Inches is: " + output);
+		}
+	</script>
+</body>
+</html>
